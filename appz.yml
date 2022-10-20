@@ -21,6 +21,8 @@ deploy:
 
 volumes:
   - claim: vault-home
+    class: openebs-replicated
+    matchLabels: false
     mount: /appz/home
     name: home
     size: 5Gi
