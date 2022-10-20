@@ -27,6 +27,8 @@ volumes:
     name: home
     size: 5Gi
   - claim: vault-data
+    class: openebs-replicated
+    matchLabels: false
     mount: /appz/data
     name: data
     size: 5Gi
